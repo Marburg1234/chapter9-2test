@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%; /*横幅を100%フルで使う*/
+  height: 50px; /*高さを50pxに設定する*/
+  background-color: #ff9a4b;
+}
+
+main{
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contents{
+  width: 300px;
+  background-color: #eeeeee;
+  display: inline-block;
+}
+
+.contents:nth-child(1){
+  margin-right: 30px;
+}
+
+.contents:nth-child(2){
+  margin-right: 30px;
+}
+
+.step{
+  background-color: #ff9a4b;
+  position: absolute;
+  color: #fff;
+}
+
+.box{
+  margin: 10px 10px 15px 10px;
+  height: 150px;
+  background-image: url(img9-2/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.box-text-area{
+  margin: 0px 10px 10px 10px;
+  padding-top: 5px ;
+}
+
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+.box2{
+  margin: 10px 10px 15px 10px;
+  height: 150px;
+  background-image: url(img9-2/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.box3{
+  margin: 10px 10px 15px 10px;
+  height: 150px;
+  background-image: url(img9-2/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.box-text{
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+  
+  main{
+    flex-direction: column;
+    margin: 50px 5%;
+  }
+  
+
+}
